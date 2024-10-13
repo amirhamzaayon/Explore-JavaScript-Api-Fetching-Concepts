@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="script.js"></script>
+
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+            colors: {
+              clifford: "#da373d",
+              greyOne: "#E9E9E9",
+              greyTwo: "#A0A0A0",
+              greyThree: "#A0A0A0",
+              greyFour: "#737373",
+              greyFive: "#494949",
+              greySix: "#212121",
+              greySeven: "#1C1C1C",
+            },
+            backgroundImage: {
+              "contact-Info": "url('assets/bg.jpg')",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Theme -->
+    <html data-theme="light"></html>
+  </head>
+  <body>
+    <header class="bg-white bg-cover">
+      <section class="max-w-[1270px] mx-auto mb-[100px] px-5 sm:px-0">
+        <nav class="flex flex-wrap justify-between items-center pt-[67px]">
+          <div class="inline-flex gap-2 items-center">
+            <img class="w-auto h-auto" src="assets/logo.webp" alt="" />
+            <p class="text-3xl font-bold text-[#212121]">Peddy</p>
+          </div>
+          <ul
+            class="flex justify-between items-center text-base text-[#737373] font-bold gap-8"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+          </ul>
+          <div class="hidden sm:inline-flex gap-4 items-center">
+            <button
+              class="rounded-full border-[1px] border-[#E9E9E9] p-[10px] bg-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_2081_182)">
+                  <path
+                    d="M8 7C8 8.06087 8.42143 9.07828 9.17157 9.82843C9.92172 10.5786 10.9391 11 12 11C13.0609 11 14.0783 10.5786 14.8284 9.82843C15.5786 9.07828 16 8.06087 16 7C16 5.93913 15.5786 4.92172 14.8284 4.17157C14.0783 3.42143 13.0609 3 12 3C10.9391 3 9.92172 3.42143 9.17157 4.17157C8.42143 4.92172 8 5.93913 8 7Z"
+                    stroke="#131313"
+                    stroke-opacity="0.7"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6 21V19C6 17.9391 6.42143 16.9217 7.17157 16.1716C7.92172 15.4214 8.93913 15 10 15H14C15.0609 15 16.0783 15.4214 16.8284 16.1716C17.5786 16.9217 18 17.9391 18 19V21"
+                    stroke="#131313"
+                    stroke-opacity="0.7"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2081_182">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <!-- ------------------------ -->
+        <div class="flex flex-col items-center pt-8 space-y-6">
+          <p class="text-base text-greyFive font-medium text-center space-y-0">
+            Bringing Families Together ❤️‍🔥
+          </p>
+          <h1
+            class="sm:text-[64px] text-[28px] text-greySix font-extrabold text-center"
+          >
+            Your Path to Adoption <br />
+            Starts Here
+          </h1>
+          <p class="text-base text-greyFive font-medium text-center">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking <br />at its layout. The
+            point of using Lorem Ipsum is that it has a.
+          </p>
+          <button
+            class="inline-flex gap-2 px-6 py-3 bg-[#0E7A81]/50 rounded-full items-center"
+          >
+            <p class="text-xl font-bold text-[#1C1C1C]">View More</p>
+            <div class="rounded-full p-[10px] bg-[#0E7A81]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+              >
+                <path
+                  d="M12.0016 1.74121L0.997989 12.7375"
+                  stroke="#1C1C1C"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M6.00191 0.87079C6.00191 0.87079 11.6356 0.397774 12.4903 1.25297C13.3449 2.10817 12.868 7.74156 12.868 7.74156"
+                  stroke="#1C1C1C"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </button>
+          <img src="assets/pet.webp" alt="" />
+        </div>
+      </section>
+    </header>
+
+    <!-- card -------------------------------- -->
+
+    <section class="max-w-[1270px] mx-auto mb-5">
+      <div class="flex flex-col items-center space-y-6">
+        <h2 class="text-[40px] text-greySix font-bold text-center">
+          Adopt Your Best Friend
+        </h2>
+        <p
+          class="text-base text-center text-greyFive font-medium max-w-[678px]"
+        >
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a.
+        </p>
+        <div class="place-content-center">
+          <nav
+            id="categories"
+            class="flex gap-4 py-5 items-center justify-center flex-wrap"
+          ></nav>
+          <div class="grid grid-cols-4 gap-4">
+            <div class="flex justify-between items-center col-span-4">
+              <p class="font-bold">Best Deal For you</p>
+              <button
+                class="btn bg-[#0E7A81] text-white"
+                id="sortButton"
+                onclick="sortByPrice();showFullPageLoading();"
+              >
+                Sort by Price
+              </button>
+            </div>
+            <div
+              id="cards"
+              class="col-span-3 grid sm:grid-cols-3 grid-cols-1 gap-4"
+            >
+              <!-- <div class="card bg-base-100 w-96 shadow-xl">
+              <figure>
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Shoes!</h2>
+                <p>Breed: x</p>
+                <p>Birth: y</p>
+                <p>Gender: F</p>
+                <p>Price: Z</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Like</button>
+                  <button class="btn btn-primary">Adobt</button>
+                  <button class="btn btn-primary">Details</button>
+                </div>
+              </div>
+              </div> -->
+            </div>
+            <div
+              id="like"
+              class="col-span-1 min-w-fit border-2 rounded-lg grid sm:grid-cols-2 grid-cols-1 gap-4 h-fit p-4"
+            >
+              <!-- <img src="" alt="" /> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Details modal -------------------------------- -->
+
+    <dialog id="customModal" class="modal">
+      <div id="details" class="modal-box w-11/12 max-w-5xl">
+        <!-- <figure>
+          <img src="${item.image}" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">${item.pet_name}</h2>
+          <p>Breed: ${item.breed}</p>
+          <p>Birth: ${item.date_of_brith}</p>
+          <p>Gender: ${item.gender}</p>
+          <p>Price: ${item.price}</p>
+          <hr />
+          <div class="">
+            <p class="font-bold">Details Information</p>
+            <p>${item.pet_details}</p>
+          </div>
+        </div> -->
+      </div>
+    </dialog>
+
+    <!-- Adopt Countdown Modal -->
+    <dialog id="adoptModal" class="rounded-lg border p-5">
+      <div
+        id="countdownDisplay"
+        class="text-center text-3xl font-bold mb-5"
+      ></div>
+      <div id="confirmMessage" class="text-center text-2xl font-bold"></div>
+      <!-- <div class="modal-action text-center">
+        <button id="closeModalBtn" class="btn">Close</button>
+      </div> -->
+      <div class="modal-action">
+        <form method="dialog">
+          <!-- if there is a button, it will close the modal -->
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- //Button -->
+    <button
+      id="actionButton"
+      class="btn bg-transparent text-white px-4 py-2 rounded-md"
+    >
+      <!-- Click me -->
+    </button>
+
+    <!-- Full-page loading spinner (initially hidden) -->
+    <div
+      id="loadingScreen"
+      class="fixed inset-0 flex justify-center items-center bg-gray-900 bg-opacity-50 hidden"
+    >
+      <div class="flex items-center space-x-2">
+        <svg
+          class="animate-spin h-8 w-8 text-white"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            class="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            stroke-width="4"
+          ></circle>
+          <path
+            class="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 0116 0"
+          ></path>
+        </svg>
+        <p class="text-white">Loading...</p>
+      </div>
+    </div>
+
+    <!-- footer -------------------------------- -->
+    <footer class="footer bg-base-200 text-base-content p-10">
+      <div></div>
+      <nav>
+        <div class="flex gap-2 items-center">
+          <img class="w-fit h-fit" src="assets/logo.webp" alt="" />
+          <p class="text-3xl font-bold text-[#212121]">Peddy</p>
+        </div>
+        <p>Location: av. Washington 165, NY CA 54003</p>
+        <p>Phone: +31 85 964 47 25</p>
+        <p>Email: info@yourdomain.com</p>
+        <p>Openings hours: 9.00 AM - 5.00 PM</p>
+      </nav>
+
+      <nav>
+        <h6 class="footer-title">Useful Links</h6>
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">About Us</a>
+        <a class="link link-hover">Animals</a>
+        <a class="link link-hover">Foundation</a>
+        <a class="link link-hover">Contact</a>
+      </nav>
+      <form>
+        <h6 class="footer-title">Newsletter</h6>
+        <fieldset class="form-control w-80">
+          <label class="label">
+            <span class="label-text">Enter your email address</span>
+          </label>
+          <div class="join">
+            <input
+              type="text"
+              placeholder="username@site.com"
+              class="input input-bordered join-item"
+            />
+            <button class="btn bg-[#0E7A81] text-white join-item">
+              Subscribe
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </footer>
+  </body>
+  <!-- <script src="script.js"></script> -->
+</html>
