@@ -19,5 +19,5 @@ The Animal Adoption web application allows users to browse a variety of adoptabl
 - **Promises**: Used for handling asynchronous operations during data fetching.
 
 ### Live Link
-https://netlify-ph-assignment-06.netlify.app/
+https://peddy-netlify.netlify.app/
 
